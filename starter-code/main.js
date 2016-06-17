@@ -5,11 +5,13 @@ var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
 
-// checking for matches
+var gameBoard = document.getElementById('game-board');
 
-if ((cardOne === cardTwo) || (cardThree === cardFour)) {
-	alert("You found a match!");
-} else {
-	alert("Sorry, try again.");
+
+var createBoard = function () {
+	for (var i = 1; i <= 4; i++) {
+		var newItem = document.createElement('div');
+		newItem.className='card';
+		document.getElementsByClassName('board')[0].appendChild(newItem);
+	}
 }
-
