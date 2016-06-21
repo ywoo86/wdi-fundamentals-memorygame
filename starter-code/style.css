@@ -57,11 +57,13 @@ footer {
 	float: left;
 }
 
-.cards {
+.card {
 	height: 200px;
 	width: 150px;
 	border: 1px solid rgba(0, 0, 0, 1);
 	background-color: rgba(255, 234, 42, 1);
+	background-image: url("Back.png");
+	background-size: cover;
 	border-radius: 10px;
 	display: inline-block;
 	float: left;
